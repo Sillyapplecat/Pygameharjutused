@@ -58,7 +58,7 @@
 # # Rect kasutamine
 # player = pygame.Rect(0, 0, 120, 140)
 # pygame.draw.rect(screen, red, player)
-# playerImage = pygame.image.load("pikachu.jpg")
+# playerImage = pygame.image.load("knight.png")
 # playerImage = pygame.transform.scale(playerImage, [player.width, player.height])
 #
 # screen.blit(playerImage,player.center)
@@ -96,14 +96,14 @@ speedX, speedY = 3, 4
 
 # player
 player = pygame.Rect(posX, posY, 120, 140)
-playerImage = pygame.image.load("pikachu.jpg")
+playerImage = pygame.image.load("knight.png")
 playerImage = pygame.transform.scale(playerImage, [player.width, player.height])
 
 # enemy - tekitame 5 suvalist vaenlast
 enemies = []
 for i in range(5):
     enemies.append(pygame.Rect(random.randint(0, screenX - 100), random.randint(0, screenY - 100), 60, 73))
-enemyImage = pygame.image.load('eevee.jpg')
+enemyImage = pygame.image.load('enemy.png')
 enemyImage = pygame.transform.scale(enemyImage, [enemies[0].width, enemies[0].height])
 
 enemyCounter = 0
